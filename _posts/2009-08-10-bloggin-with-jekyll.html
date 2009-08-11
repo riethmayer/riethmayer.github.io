@@ -1,31 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>
-      welcome / jan riethmayer
-    </title>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" title="yui grids" charset="utf-8"/>
-    <link rel="stylesheet" href="css/syntax.css" type="text/css" />
-    <meta name="author" content="Jan Riethmayer" />
-  </head>
-  <body>
-    <div id="doc2" class="yui-t1">
-      <div id="hd">
-        <h1>
-          Jan Riethmayer on Rails
-        </h1>
-        <h2>welcome</h2>
-      </div>
-      <div id="bd">
-        <div id="yui-main">
-          <div class="yui-b">
-            
-  <h2>
-    <a href="/2009/08/10/bloggin-with-jekyll.html">blogging with jekyll</a>
-  </h2>
-  
+---
+layout: default
+title: blogging with jekyll
+---
+
 <h2>Allright, again. But why?</h2>
 
 <p>I often play around with different blogs, writing my own, using different approaches. I have to admit, it's fun for me, building new sites and testing new frameworks.</p>
@@ -39,31 +16,10 @@
 
 <p>Sounds great, doesn't it? Next question is, what to use to write the actual text? <a href="http://hobix.com/textile/" title="Textile Reference">textile markup</a> doesn't feel so natural to mee. Maybe I'm going to have a look at <a href="http://webgen.rubyforge.org/documentation/contentprocessor/maruku.html" title="Webgen::ContentProcessor::Maruku | webgen - static website generator">maruku</a> soon. Read somewhere it somehow talks to <a href="http://www.latex-project.org/" title="LaTeX project: LaTeX &ndash; A document preparation system">LaTeX</a>, that would be yummi :D</p>
 
-<div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">foo</span>
-<span class="lineno">2</span>   <span class="nb">puts</span> <span class="s1">&#39;foo&#39;</span>
-<span class="lineno">3</span> <span class="k">end</span>
-</pre>
-</div>
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
-<p>Thanks for reading. <br />Best, Jan</p> 
-  <em>Erstellt am 10 August 2009.</em> 
-  <div class="categories">
-  
-  </div>
-  <a href="#disqus_thread">View Comments</a>
-  <div id="disqus_thread"></div>
-  <script type="text/javascript" src="http://disqus.com/forums/riethmayer/embed.js"></script>
-
-          </div>
-        </div>
-        <div class="yui-b">
-          <div id="sidebar">
-          </div>
-        </div>
-      </div>
-      <div id="ft">
-        (cc) 2009 – Jan Riethmayer
-      </div>
-    </div>
-  </body>
-</html>
+<p>Thanks for reading. <br />Best, Jan</p>
