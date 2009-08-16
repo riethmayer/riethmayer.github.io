@@ -26,6 +26,7 @@ h2 {
   margin: 18px 0 28px 0;
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Helvetica, Arial;
   font-size: 160%;
+  text-transform:lowercase;
 }
 
 h3 { 
@@ -176,6 +177,7 @@ dd {
 
 #hd {
   height: 230px;
+  margin:2em 0 0 0;
 }
 
 #hd a {
@@ -336,7 +338,7 @@ blockquote#frontquote {
 }
 
 .be-berlin{
-  background: #fff url('images/be_berlin.gif') no-repeat scroll top left;
+  background: transparent url('images/be_berlin.gif') no-repeat scroll top left;
   height:160px;
   padding:20px;
   width:360px;
@@ -344,11 +346,11 @@ blockquote#frontquote {
   float:right;
 }
 .be-berlin ul{
-
+  padding: 0 0 0 24px;
 }
 .be-berlin ul li{
   list-style:none;
-  font-size:182%;
+  font-size:197%;
   margin-bottom:10px;
 }
 
@@ -531,7 +533,7 @@ ul.info-list li {
   background: url('images/content-bottom-bg.gif') top left repeat-x;
   border-top: 1px solid #858585;
   margin: 10px;
-  padding: 10px 80px 0 80px;
+  padding: 10px 40px 0 40px;
   overflow: hidden;
 }
 
@@ -818,5 +820,11 @@ ul#slides.people-slides {
 /*design stuff*/
 
 #hd{
-  background:transparent url(images/jan.jpg) no-repeat scroll 230px -14px;
+  /*background:transparent url(images/jan.jpg) no-repeat scroll 240px -14px;*/
+  background: transparent url(images/hd-red.jpg) no-repeat scroll 0 0;
+  padding:1em;
+}
+#header{
+  width: 225px;
+  line-height:1;
 }

@@ -7,6 +7,7 @@
       {{ page.title }} / jan riethmayer
     </title>
      <link href="http://feeds.feedburner.com/riethmayer" rel="alternate" title="Jan Riethmayer" type="application/atom+xml" />
+     <base href="/">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" title="yui grids" charset="utf-8"/>
     <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
     <link rel="stylesheet" href="/css/style1/screen.css" type="text/css" media="all" charset="utf-8">
@@ -24,10 +25,12 @@
               <li class='last'><em>be</em> berlin</li>
             </ul>
           </div>
-          <h1>
-            <a href="http://riethmayer.de/"><em>jan</em> riethmayer</a>
-          </h1>
-          <h2>{{ page.title }}</h2>
+          <div id="header">
+            <h1>
+              <a href="http://riethmayer.de/"><em>jan</em> riethmayer</a>
+            </h1>
+            <h2>{{ page.title }}</h2>
+          </div>
         </div>
         <div id="navigation">
           <ul>
