@@ -353,7 +353,7 @@ blockquote#frontquote {
 }
 
 #navigation {
-  background: url('images/navigation-bg.gif') top left no-repeat;
+  background: url('images/navigation.gif') top left no-repeat;
   font: 13px/1.2 Verdana, sans-serif;
   width: 808px;
   height: 43px;
@@ -379,7 +379,7 @@ blockquote#frontquote {
 }
 
 #navigation li a {
-  color: #bbb;
+  color: #222;
   text-decoration: none;
 }
 
