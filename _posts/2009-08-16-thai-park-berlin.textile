@@ -22,4 +22,5 @@ Der Park ist gut besucht und wird auch sauber gehalten. Es gibt eine &ouml;ffent
 
 Zudem werden Thai-Massagen angeboten, Manik&uuml;re, Pedik&uuml;re oder Friseure gibt es nat&uuml;rlich auch. Was mich pers&ouml;nlich lockt, ist der Basketball-Platz. Wer kommt n&auml;chsten Sonntag mit zocken? Ich bin schon mit paar guten alten Freunden verabredet =)
 
-<object width="400px" height="350px"> <param name="flashvars" value="offsite=true&lang=de-de&page_show_url=%2Fphotos%2Friethmayer%2Fsets%2F72157621930942283%2Fshow%2F&page_show_back_url=%2Fphotos%2Friethmayer%2Fsets%2F72157621930942283%2F&set_id=72157621930942283&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=71649"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=71649" allowFullScreen="true" flashvars="offsite=true&lang=de-de&page_show_url=%2Fphotos%2Friethmayer%2Fsets%2F72157621930942283%2Fshow%2F&page_show_back_url=%2Fphotos%2Friethmayer%2Fsets%2F72157621930942283%2F&set_id=72157621930942283&jump_to=" width="400" height="300"></embed></object>
+"Ein paar Bilder als Diashow":http://www.flickr.com/photos/riethmayer/sets/72157621930942283/show/
+_Flickr hat leider das wundersch&oum;ne embedded Teil deaktiviert :(_
