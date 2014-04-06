@@ -2,7 +2,7 @@
 layout: post
 title:  "Use command line tools more often!"
 date:   2014-04-04 18:40:52
-categories: jekyll update
+categories: automation
 ---
 
 My team already makes fun of me about my little shell-script-crusade.
@@ -24,7 +24,8 @@ looked at a website, which offered a lot of content about online-shops.
 My first approach on scraping the site for leads was building a ruby
 script. It's been a javascript paginated site, so the straight forward
 solution was to utilize a webdriver to scrape and click. Building this with
-[mechanize](https://github.com/sparklemotion/mechanize) was pretty straight forward.
+[mechanize](https://github.com/sparklemotion/mechanize) was pretty
+straight forward.
 
 Then I got lost in refactoring of throw-away code because it was so
 ugly. I wasn't happy with maintaining another project to do future
@@ -36,15 +37,18 @@ Instead of using the pagination of the site, I utilized the search as
 an api to search for all shops (eventually not so nice).
 
 {% highlight bash %}
-curl http://www.ebit.com.br/reputation/searchResults/ALL/ALL/ALL/BEST_EVALUATED/1/30000 -s > results.txt
-cat results.txt | scrape -be "li a" | grep "</a>" | scrape -be "a" > links.html
-cat links.html | xml2json | jq -c ".html.body.a[]" | json2csv -k href,'$t' > relative_links.csv
+curl http://example.com/site-with-relative-urls -s > results.txt
+cat results.txt | scrape -be "li a" | grep "</a>" | \
+scrape -be "a" > links.html
+cat links.html | xml2json | jq -c ".html.body.a[]" | \
+json2csv -k href,'$t' > relative_links.csv
 mkdir results
 cat relative_links.csv | cut -d "," -f 1 | while read relative; do \
 `curl -L "http://www.ebit.com.br$relative" > ./results$relative.html`; \
 done
 ls -1 results | while read page; do \
-(scrape -be 'table tr td:first-child a' $page |  xml2json | jq '.html.body.a.href' > $page.link); done
+(scrape -be 'table tr td:first-child a' $page |  xml2json | \
+jq '.html.body.a.href' > $page.link); done
 find . -iname "*.link" | while read "link"; do \
 echo "${link/.html.link/}"; done | while read "file"; do \
 echo "${file/.\//},`cat $file.html.link`"; done > shops.csv
@@ -71,7 +75,8 @@ and out (`<`, `>`), firing off subshells `()` and use
 control-constructs like `while`, `if` and `for`.
 
 Learn using basic commands like `echo`, `cat`, `find`, `cut`, `grep`, `ls`,
-`xargs`, `sed` and `awk`. Unleash extra utility by installing `curl`, `xml2json`,
+`xargs`, `wc`, `sort`, `sed` and `awk`. Unleash extra utility by
+installing `curl`, `xml2json`,
 `scrape`, `jq` and `json2csv`.
 
 Once you think you're done, look at the few 100 unix commands
@@ -79,6 +84,5 @@ installed on your machine :)
 
     ls /usr/bin | less
 
-Have fun!
-
-
+Cheers!
+Jan
