@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Use command line tools more often!"
-date:   2014-04-04 18:40:52
+date:   2014-04-03 18:40:52
 categories: automation
 ---
 
